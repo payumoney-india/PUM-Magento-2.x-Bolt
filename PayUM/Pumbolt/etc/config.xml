@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <pumbolt>
+                <model>PayUM\Pumbolt\Model\PaymentMethod</model>
+                <title>PayUmoney BOLT</title>
+				<pumkey backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+				<pumsalt backend_model="Magento\Config\Model\Config\Backend\Encrypted" />				
+                <payment_action>Sale</payment_action>
+                <visible_on_cart>1</visible_on_cart>
+                <order_status>pending_payment</order_status>
+            </pumbolt>
+        </payment>
+    </default>
+</config>
